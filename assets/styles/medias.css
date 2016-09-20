@@ -1,0 +1,14 @@
+@media (min-width: 970px) {
+    .navbar {
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+    .highlight > h2 {
+        width: 600px;
+    }
+    
+    #services div.row:last-of-type {
+        margin-top: 30px;
+    }
+}
