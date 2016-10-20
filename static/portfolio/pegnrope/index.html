@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PegNRope</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Custom CSS -->
+    <link href="assets/css/custom-style.css" rel="stylesheet">
+    <!-- Medias -->
+    <link rel="stylesheet" type="text/css" media="all" href="assets/css/medias.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" type="text/css" media="all" href="assets/css/animate.css">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css" type="text/css" />
+
+</head>
+<body>
+<!--   Navbar:: Only visible for xs-->
+    <div id="navbar" class="visible-xs">
+        <ul class="nav">
+            <li><img src="images/logo.png" class="img-responsive"></li>
+            <li><a href="#">Visit Barcelona</a></li>
+            <li><a href="#">Visit Europe</a></li>
+<!--
+            <li>
+               <div class="has-feedback">
+                <form>
+	                <input type="search">
+                </form>
+                <i class="glyphicon glyphicon-search form-control-feedback"></i>
+                </div>
+            </li>
+-->
+        </ul>
+    </div>
+
+<!--   End of Navbar-->
+   
+    <div class="container-fluid">
+    <div class="row full">
+        <div id="sidebar" class="col-md-2 no-padding hidden-xs">
+            <div class="row">
+                <div class="col-md-6 sidebar-brand">
+                    <img src="images/logo.png" id="logo" class="animated fadeInUp one-sec-delay">
+                </div>
+                <div class="col-md-6 search-icon-align">
+                    <form action="" class="search-form">
+                        <div class="form-group has-feedback">
+            	    	<label for="search" class="sr-only">Search</label>
+            	    	<input type="text" class="form-control" name="search" id="search" placeholder="search">
+              	    	<span class="glyphicon glyphicon-search form-control-feedback"></span>
+                    	</div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="sidebar-logo">
+                <img src="images/sidebar-logo.png" class="animated fadeInUpBig two-secs-delay">
+            </div>
+            <h1 id="titleh1">explore barcelona</h1>
+            <hr>
+            <div id="menu-wrapper">
+                <ul id="double">
+                  <li>top ten</li>
+                  <li>hotels</li>
+                  <li>features</li>
+                  <li>eat & drink</li>
+                </ul>
+            </div>
+            
+            <div id="spotlight">
+                <div style="text-align:center;">
+                   <p>Explore Spain</p>
+                   <hr>
+                   <p>Explore Europe</p>
+                </div>
+            </div>
+          </div>
+    
+        <!--End Of Sidebar-->
+        <div id="main" class="col-md-8">
+            <div class="row">
+                <div class="col-md-12" style="padding: 0px 0px 0px 0px;">
+                    <div id="carousel-header" class="carousel slide carousel-fade" data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#carousel-header" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-header" data-slide-to="1"></li>
+                            <li data-target="#carousel-header" data-slide-to="2"></li>
+                          </ol>
+                        
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                              <!--First Slider-->
+                            <div class="item active">
+                              <img src="images/carousel1.jpg" alt="Header 1">
+                              <div class="carousel-caption">
+                                <!--Title-->
+                                <h1>La Sagrada Familia</h1>
+                                <!--Menu Buttoms-->
+                                <div class="menu">
+                                    <div class="header-btn-body"><span class="header-btn">FACTS</span><span>FACTS</span></div>
+                                    <span class="header-btn-space"></span>
+                                    <div class="header-btn-body negative"><span class="header-btn">MAP</span><span>MAP</span></div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--Second Slider-->
+                            <div class="item">
+                              <img src="images/carousel2.jpg" alt="Header 1">
+                              <div class="carousel-caption">
+                                <!--Title-->
+                                <h1>Casa Batló</h1>
+                                <!--Menu Buttoms-->
+                                <div class="menu">
+                                    <div class="header-btn-body"><span class="header-btn">FACTS</span><span>FACTS</span></div>
+                                    <span class="header-btn-space"></span>
+                                    <div class="header-btn-body negative"><span class="header-btn">MAP</span><span>MAP</span></div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--Third Slider-->
+                            <div class="item">
+                              <img src="images/carousel3.jpg" alt="Header 1">
+                              <div class="carousel-caption">
+                                <!--Title-->
+                                <h1>Park Güell</h1>
+                                <!--Menu Buttoms-->
+                                <div class="menu">
+                                    <div class="header-btn-body"><span class="header-btn">FACTS</span><span>FACTS</span></div>
+                                    <span class="header-btn-space"></span>
+                                    <div class="header-btn-body negative"><span class="header-btn">MAP</span><span>MAP</span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <!--Enf of Header-->
+            <div class="row" id="weblist">
+            <div class="col-md-4">
+                <div class="weblist">
+                    <div><span class="numbered">1</span></div>
+                    <div><h2>Lorem ipsum dolor sit ametumque quos est harum architecto?</h2></div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quia quam ullam dolore ut optio error voluptas aliquam dolorum vitae eos sint ea vel veritatis possimus iure perferendis molestiae est.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ea, id officia atque placeat aut laudantium eveniet eius ex sequi impedit iste inventore sapiente veritatis rerum iure nesciunt facere autem!</p>
+            </div>
+            
+            <div class="col-md-4">
+            <div class="weblist">
+                    <div><span class="numbered">2</span></div>
+                    <div><h2>Lorem ipsum dolor sit ametumque quos est harum architecto?</h2></div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quia quam ullam dolore ut optio error voluptas aliquam dolorum vitae eos sint ea vel veritatis possimus iure perferendis molestiae est.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ea, id officia atque placeat aut laudantium eveniet eius ex sequi impedit iste inventore sapiente veritatis rerum iure nesciunt facere autem!</p>
+            </div>
+            <div class="col-md-4">
+                <div class="weblist">
+                    <div><span class="numbered">3</span></div>
+                    <div><h2>Lorem ipsum dolor sit ametumque quos est harum architecto?</h2></div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quia quam ullam dolore ut optio error voluptas aliquam dolorum vitae eos sint ea vel veritatis possimus iure perferendis molestiae est.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ea, id officia atque placeat aut laudantium eveniet eius ex sequi impedit iste inventore sapiente veritatis rerum iure nesciunt facere autem!</p>
+            </div>
+            </div>
+            <!--End Of WebList-->
+            
+            <div class="row" id="facts">
+                <div class="col-md-12">
+                    <h2>Facts</h2>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h3>Lorem ipsum dolor sit ametumque quos est harum architecto?</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, tempora vel aliquid. Veritatis, perferendis, sapiente, in ratione nemo soluta suscipit dolor doloribus veniam ipsam molestias molestiae a quisquam amet temporibus.</p>
+                        </div>
+                        <div class="col-md-5"><img src="images/imageholder.jpg" class="img-responsive"></div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-7 col-md-push-5">
+                            <h3>Lorem ipsum dolor sit ametumque quos est harum architecto?</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, tempora vel aliquid. Veritatis, perferendis, sapiente, in ratione nemo soluta suscipit dolor doloribus veniam ipsam molestias molestiae a quisquam amet temporibus.</p>
+                        </div>
+                        <div class="col-md-5 col-md-pull-7"><img src="images/imageholder.jpg" class="img-responsive"></div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h3>Lorem ipsum dolor sit ametumque quos est harum architecto?</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, tempora vel aliquid. Veritatis, perferendis, sapiente, in ratione nemo soluta suscipit dolor doloribus veniam ipsam molestias molestiae a quisquam amet temporibus.</p>
+                        </div>
+                        <div class="col-md-5"><img src="images/imageholder.jpg" class="img-responsive"></div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-7 col-md-push-5">
+                            <h3>Lorem ipsum dolor sit ametumque quos est harum architecto?</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, tempora vel aliquid. Veritatis, perferendis, sapiente, in ratione nemo soluta suscipit dolor doloribus veniam ipsam molestias molestiae a quisquam amet temporibus.</p>
+                        </div>
+                        <div class="col-md-5 col-md-pull-7"><img src="images/imageholder.jpg" class="img-responsive"></div>
+                    </div>
+                </div>
+            </div>
+            <!--Enf Of Fats-->
+            <div class="row" id="fast-facts">
+                <div class="col-md-9">
+                    <div class="google-maps">
+                        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBlsDqeDCPYRgIj1Dpbv_VbLf14wUw4E10
+    &q=La+Barceloneta,Barcelona+ES" width="551" height="376" frameborder="0" style="border:0"></iframe>
+                    </div>
+                    <!--End Of G-MAPS-->
+                </div>
+                <div class="col-md-3">
+                    <h2>Fast Facts</h2>
+                    <ul>
+                        <li><span>Map and Address</span></li>
+                        <li><span>Website</span></li>
+                        <li><span>Online Tickets</span></li>
+                        <li><span>Time Needed: 1 - 2 hours</span></li>
+                    </ul>
+                    <img src="images/sficon.jpg" class="img-responsive"></img>
+                </div>
+                
+                <div class="col-md-12"><h3><span>&#9658;</span> Other Barcelona Top 10 Attractions Near La Sagrada Familia Are Marked In Yellow</h3></div>
+            </div>
+            <!--Enf Of Fast-Facts-->
+            
+            <div class="row" id="visiting-tips">
+                <div class="col-md-12">
+                    <h2>More Visiting Tips</h2>
+                    <ul>
+                        <li>Ensure you buy the entrance ticket and tower access online, the lines can get very long!</li>
+                        <li>Don't reach before the time on your ticket, they won't let you earlier.</li>
+                        <li>A small museum underneath tells the long history of building a basilica. Go if you have the time.</li>
+                        <li>The towers have a great view across Barcelona.</li>
+                    </ul>
+                </div>
+            </div>
+            <!--End Of Visiting Tips-->
+            
+            <div class="row" id="related-links">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Related Links</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <img src="images/city.jpg" class="img-responsive"></img>
+                        <h3>City</h3>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <img src="images/fivestarshotel.jpg" class="img-responsive"></img>
+                        <h3>Five Stars Hotels</h3>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <img src="images/attractions.jpg" class="img-responsive"></img>
+                        <h3>Attractions</h3>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <img src="images/zoos.jpg" class="img-responsive"></img>
+                        <h3>Zoos</h3>
+                    </div>
+              </div>
+            </div>
+            <!--End Of Related Links-->
+            
+            <div class="row" id="reviews">
+                <div class="col-md-12">
+                    <h2>Review And Feedback Of La Sagrada Familia</h2>
+                    <section>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, neque, eligendi, suscipit, aut nisi laborum nostrum ad autem deserunt modi commodi ducimus libero fuga voluptate itaque accusamus officia voluptatem quas.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, vel, dicta saepe iusto aut suscipit voluptatum magnam maiores nulla molestiae odio rerum sapiente dolorum! In distinctio quae adipisci libero nobis.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, officiis ipsum adipisci numquam temporibus quibusdam expedita esse animi? Cum, pariatur temporibus magnam sunt voluptates nihil facilis quas saepe? Quaerat, eum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, architecto beatae et asperiores eos sit quos perspiciatis numquam quod saepe natus labore quisquam vitae omnis laborum aut facere dolor at.</p>
+                    </section>
+                </div>
+            </div>
+            <!--End Of Review-->
+            
+            <div class="row" id="quick-links">
+                <div class="col-md-3 col-xs-6">
+                    <h2>Destinations</h2>
+                    <ul>
+                        <li>Barcelona</li>
+                        <li>Madrid</li>
+                        <li>Seville</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <h2>Top 10</h2>
+                    <ul>
+                        <li>Top 10 Things To Do in Barcelona</li>
+                        <li>Top 10 Things To Do in Madrid</li>
+                        <li>Top 10 Things To Do in Seville</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <h2>Eat & Drink</h2>
+                    <ul>
+                        <li>Barcelona Eat & Drinks</li>
+                        <li>Madrid Eat & Drinks</li>
+                        <li>Seville Eat & Drinks</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <h2>Hotels</h2>
+                    <ul>
+                        <li>Barcelona Hotels</li>
+                        <li>Madrid Hotels</li>
+                        <li>Seville Hotels</li>
+                    </ul>
+                </div>
+            </div>
+            <!--End Of Quick-Links -->
+            
+            <div class="row" id="footer">
+                <div class="col-md-2">
+                    <img alt="PegNRope" src="images/logo.png" width="123px" height="33px">
+                    </div>
+                <div class="col-md-7">
+                    <ul>
+                        <li><a href="#">PEGNROPE</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#">PRIVACY</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3"><p>PegNRope - Hotels, Experiences and Activities</p></div>
+            </div>
+            
+            
+        </div>
+        <!--End of Main Page-->
+        </div>
+  <!--End of Page Wrapper-->
+  </div>
+  
+
+  
+  
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <!--Animation-->
+    <script src="assets/js/animation.js"></script>
+    
+</body>
+</html>

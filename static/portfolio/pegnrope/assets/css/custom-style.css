@@ -1,0 +1,667 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Open Sans';
+}
+
+.container-fluid, 
+.full {
+    height: 100%;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat';
+}
+
+/*Sidebar*/
+#sidebar {
+    background-color: white;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+div#sidebar.col-md-2.no-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/*Main*/
+#main {
+    background-color: white;
+    color: #444949;
+}
+
+#logo {
+    width: 132px;
+    height: 35px;
+    margin: 22px 0 0 33px;
+}
+
+.fa-search {
+    font-size: 25px;
+    margin: 22px 27px 0 0;
+}
+
+.search-icon-align {
+    text-align: right;
+}
+
+.sidebar-logo {
+    text-align: center;
+    margin: 45px 0 0 0;
+}
+
+#titleh1 {
+    color: #1187c9;
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: bolder;
+    margin-top: 50px;
+    text-align: center;
+}
+
+hr {
+    width: 52px;
+    height: 3px;
+    background-color: #1187c9;
+    margin: 23px auto;
+}
+
+#menu-wrapper ul {
+    width: 431px;
+    overflow: hidden;
+    margin-bottom: 31px;
+}
+
+#menu-wrapper li {
+    float: left;
+    display: inline;
+    color: #1187c9;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 2;
+}
+
+#menu-wrapper #double li {
+    width: 50%;
+}
+
+#menu-wrapper ul li:nth-child(2n+1) {
+    text-align: right;
+    padding-right: 27.5px;
+}
+
+#menu-wrapper ul li:nth-child(2n+2) {
+    padding-left: 27.5px;
+}
+
+#spotlight div {
+    display: table-cell;
+    vertical-align: middle;
+    width: 479px;
+    height: 191px;
+    background-color: #c61274;
+}
+
+#spotlight p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#spotlight hr {
+    background-color: white;
+    height: 2px;
+}
+
+/* List */
+div#weblist.row {
+    padding: 40px 40px 40px 40px;
+}
+
+.weblist{
+	display: table;
+	width: 100%;
+}
+
+.weblist div{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+.weblist h2 {
+    font-size: 20px;
+    color: #444949;
+    padding-left: 17px;
+}
+
+.numbered {
+    /*Circle shape*/
+    width: 45px;
+    height: 45px;
+    background-color: #c61274;
+    border-radius: 50%;
+    display: inline-block;
+    padding-top: 6px;
+    /*Number style*/
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+/*Facts*/
+
+div#facts.row {
+    padding: 40px 40px 40px 40px;
+}
+
+#facts {
+    background-color: #d0e7e9;
+}
+
+#facts h2 {
+    margin-top: 0px;
+}
+
+#facts div.row:nth-child(2n+1) {
+    padding: 25px 0px 25px 0px;
+}
+
+#facts h3 {
+    color: #444949;
+}
+
+/*Fast Facts*/
+
+div#fast-facts.row {
+    padding: 40px 40px 40px 40px;
+}
+
+#fast-facts {
+    background-color: #f6e9ed;
+    margin-top: 3px;
+}
+
+#fast-facts img {
+    margin-top: 25px;
+}
+
+#fast-facts ul {
+    padding: 0 0 0 25px;
+    margin: 0;
+}
+
+#fast-facts  li {
+    list-style-type: circle;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: -15px;
+}
+
+#fast-facts  li span {
+    font-size: 13px;
+    vertical-align: middle;
+    font-weight: normal;
+}
+
+
+/*Google Map*/
+.google-maps {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+.google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+/*EXTRA*/
+
+.col-md-12 h3 {
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.col-md-12 h3 span {
+    color: #c61274;
+}
+
+/*VISITING TIPS*/
+
+#visiting-tips {
+    background-color: #fbecd8;
+    margin-top: 3px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#visiting-tips .col-md-12{
+    width: 70%;
+}
+
+#visiting-tips ul {
+    padding: 0;
+}
+
+/*Related Links*/
+
+#related-links {
+    background-color: #bfd4bf;
+    padding: 40px 40px 40px 40px;
+    margin-top: 3px;
+}
+
+#related-links img {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#related-links h3 {
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+#related-links h2 {
+    margin-top: 0px;
+}
+
+
+/*Review*/
+
+#reviews {
+    background-color: #e4e9ef;
+    padding: 40px 40px 40px 40px;
+    margin-top: 3px;
+}
+
+#reviews h2 {
+    margin-top: 0px;
+}
+
+
+/*Quick Links*/
+
+#quick-links {
+    background-color: #f1f2ea;
+    padding: 40px 40px 40px 40px;
+    margin-top: 3px;
+}
+
+#quick-links h2 {
+    margin-top: 0px;
+}
+
+#quick-links ul {
+    padding-left: 0px;
+}
+#quick-links li {
+    list-style: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Footer */
+#footer {
+    padding-top: 117px;
+    padding-bottom: 65px;
+    
+}
+
+#footer ul {
+    list-style-type: none;
+    padding-left: 30px;
+    padding-top: 9px;
+}
+
+#footer ul li {
+    display: inline;
+    font-size: 9px;
+    text-transform: uppercase;
+}
+
+#footer ul li a {
+    color: #87a671;
+}
+
+#footer p {
+    padding-top: 12px;
+    font-size: 9px;
+}
+
+
+/*Shadow*/
+
+div#sidebar {
+  -webkit-box-shadow: 3px 3px 25px 4px rgba(0,0,0,0.5);
+  -moz-box-shadow: 3px 3px 25px 4px rgba(0,0,0,0.5);
+  box-shadow: 3px 3px 25px 4px rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+/*Header + Buttons*/
+
+.header-btn-body span {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+.header-btn-body, .header-btn {
+  transition: 0.3s;  
+}
+
+.header-btn-body {
+    height: 32px;
+    width: 65px;
+    font-size: 15px;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 5px 10px 5px;
+    font-family: 'Montserrat';
+    overflow: hidden;
+}
+
+.negative {
+    color: black;
+    background-color: white;
+}
+
+.header-btn {
+  margin-top: -0.3em;   
+}
+
+.header-btn-body:hover .header-btn{
+  margin-top: -1.8em;
+}
+
+.header-btn-space {
+    width: 22px;
+}
+
+/*Carousel Menu*/
+.carousel-caption .menu {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    order: 2;
+}
+
+.carousel-caption .menu #facts {
+    font-size: 15px;
+    background-color: #fff;
+    border: 1px solid white;
+    padding: 10px 5px 10px 5px;
+    font-family: 'Montserrat';
+    order: 3;
+}
+
+.carousel-caption .menu #map {
+    font-size: 15px;
+    padding: 10px 5px 10px 5px;
+    margin-right: 24px;
+    border: 1px solid white;
+    color: white;
+}
+
+.header-btn-body span {
+    text-shadow: none;
+}
+
+/* Animation Control */
+
+.one-sec-delay {
+    -webkit-animation-delay: 1s;
+}
+
+.two-secs-delay {
+    -webkit-animation-delay: 2s;
+}
+
+/*Search*/
+.search-form .form-group {
+  float: right !important;
+  transition: all 0.35s, border-radius 0s;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border: 0px solid #ccc;
+}
+
+div.col-md-6.search-icon-align {
+    padding: 30px 33px 0 0;
+}
+.search-form .form-group input.form-control {
+  padding-right: 20px;
+  border: 0 none;
+  background: transparent;
+  box-shadow: none;
+  display:block;
+}
+.search-form .form-group input.form-control::-webkit-input-placeholder {
+  display: none;
+}
+.search-form .form-group input.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  display: none;
+}
+.search-form .form-group input.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  display: none;
+}
+.search-form .form-group input.form-control:-ms-input-placeholder {
+  display: none;
+}
+.search-form .form-group:hover,
+.search-form .form-group.hover {
+  width: 100%;
+  border-radius: 25px 4px 4px 25px;
+  border: 1px solid #ccc;
+}
+.search-form .form-group span.form-control-feedback {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  z-index: 2;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  color: #000;
+  left: initial;
+  font-size: 22px;
+}
+
+/*Carousel*/
+
+.carousel-caption {
+    top: 33%;
+    bottom: 33%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-caption h1 {
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    order: 1;
+}
+
+
+
+/*
+  Bootstrap Carousel Fade Transition (for Bootstrap 3.3.x)
+  CSS from:       http://codepen.io/transportedman/pen/NPWRGq
+  and:            http://stackoverflow.com/questions/18548731/bootstrap-3-carousel-fading-to-new-slide-instead-of-sliding-to-new-slide
+  Inspired from:  http://codepen.io/Rowno/pen/Afykb 
+*/
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+  WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+  Need to override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+.carousel-fade .carousel-inner .item {transition-duration: 2s}
+
+/*Navbar*/
+
+#navbar {
+    background-color: #c61274;
+}
+#navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navbar ul:first-of-type {
+    background-color: #ffffff;
+}
+#navbar ul li:first-of-type {
+        margin-right: 15px;
+}
+#navbar ul li img {
+    width: 100px;
+}
+#navbar ul li a{
+   color: white;
+    background-color: #c61274;
+    text-align: center;
+}
+
+/* reset webkit search input browser style
+#navbar input {
+	outline: none;
+}
+#navbar input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+#navbar input::-webkit-search-decoration,
+#navbar input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+ 
+#navbar input[type=search] {
+    background: #ededed  no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+	width: 15px;
+	padding-left: 10px;
+	color: transparent;
+	cursor: pointer;
+}
+
+#navbar input[type=search]:hover {
+    width: 130px;
+	background-color: #fff;
+	border-color: #6dcff6;
+	
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+}
+#navbar input[type=search]:focus {
+	width: 130px;
+	padding-left: 32px;
+	color: #000;
+	background-color: #fff;
+	cursor: auto;
+}
+
+
+.right-inner-addon {
+    position: relative;
+}
+.right-inner-addon input {
+    padding-right: 30px;    
+}
+.right-inner-addon i {
+    position: absolute;
+    right: 0px;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+*/

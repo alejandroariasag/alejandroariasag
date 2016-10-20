@@ -1,14 +1,45 @@
 @media (min-width: 970px) {
+/*Navbar*/
     .navbar {
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
+    
+    .navbar-default .navbar-nav>li>a {
+    padding: 93px 32px 40px 32px;
+    background: none;
+    }
+    
+    .navbar img {
+        max-width: none;
+    }
+    
     .highlight > h2 {
         width: 600px;
     }
     
+/*Services*/
     #services div.row:last-of-type {
         margin-top: 30px;
+    }
+
+/*Portfolio*/
+    #portfolio {
+        margin-top: 130px;
+        margin-bottom: 130px;
+    }
+    
+    #portfolio img {
+        max-width: 400px;
+    }
+    
+    #portfolio .img-container:nth-of-type(2n+1) {
+        float: right;
+    }
+    
+    #portfolio .description {
+        width: 80%;
+        text-align: left;
     }
 }

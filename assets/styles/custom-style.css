@@ -1,8 +1,16 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
 body {
     background-color: #fcfcfc;
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
+
+a:focus, a:hover {
+    color: #fff;
+    text-decoration: inherit;
+}
+
 /*Navbar*/
 .navbar {
     background:none;
@@ -13,15 +21,18 @@ body {
 }
 
 .navbar-default .navbar-nav>li>a {
-    padding: 93px 32px 40px 32px;
+    padding: 10px;
     color: #99e1d9;
+    background-color: white;
     font-weight: 800;
     font-size: 13px;
     /*  Animation*/
    -webkit-transition: all 0.3s ease;
    transition: all 0.3s ease;
 }
+
 .navbar img {
+    max-width: 50px;
     /*  Animation*/
    -webkit-transition: all 0.3s ease;
    transition: all 0.3s ease;
@@ -30,9 +41,15 @@ body {
     color: #99e1d9;
 }
 
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
+    background-image: none;
+    background-color: white;
+    box-shadow: none;
+}
+
 /*Navbar Shrink*/
 .navbar.shrink  {
-    background:#fff;
+    background: #fff;
     border-bottom: 1px solid #f4f4f4;
     filter:none;
     box-shadow:none;
@@ -48,7 +65,13 @@ body {
    transition: all 0.3s ease;
 }
 
-.navbar-default.shrink  .navbar-nav>li>a:hover {
+.navbar-default.shrink .navbar-nav>li>a:hover{
+    color: #99e1d9;
+    background-color: white;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: white;
     color: #99e1d9;
 }
 
@@ -63,6 +86,7 @@ body {
 nav.navbar.shrink {
     min-height: 35px;
 }
+
 /*Video*/
 .homepage-hero-module {
     border-right: none;
@@ -107,41 +131,37 @@ nav.navbar.shrink {
 }
 /*Video content*/
 .highlight {
-  z-index: 101;
-  position: relative;
+    z-index: 101;
+    position: relative;
+    margin: 15%;
 }
 
 
 .highlight > h1 {
     color: #fffae3;
     font-size: 36pt;
-    margin-top: 20%;
-    margin-left: 10%
 }
 
 .highlight > h2 {
     color: #fffae3;
     font-size: 14pt;
-    margin-left: 10%;
 }
 
 /*Buttons Colors*/
-.highlight > button {
+.highlight > .rhino-button {
     margin-left: 10%;
     margin-top: 2%;
 }
-
-.btn-primary {
+.rhino-button {
     background-image: linear-gradient(to bottom, #f7567c 0, #f7567c 100%);
     border-color: #f7567c;
-    background-color: #fff;
+    color: #fff;
     height: 40px;
     width: 200px;
-}
-
-.btn-primary:hover {
-    border-color: #f7567c;
-    background-color: #f7567c;
+    border-radius: 7px;
+    font-size: 17px;
+    text-align: center;
+    padding-top: 7px;
 }
 
 /*Badges Colors*/
@@ -179,24 +199,31 @@ nav.navbar.shrink {
     right: 0;
 }
 /*Portfolio*/
+
 #portfolio {
-    margin-top: 130px;
-    margin-bottom: 130px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
 }
+
 #portfolio img{
-    max-width: 400px;
+    max-width: 200px;
+}
+
+#portfolio .img-responsive {
+    display: inline-block;
+}
+
+#portfolio .img-container {
+    text-align: center;
 }
 
 #portfolio .description {
-    width: 80%;
+    width: 100%;
 }
 
-#portfolio .description button{
+#portfolio .description .rhino-button{
     margin-top: 15px;
-}
-
-#portfolio .img-container:nth-of-type(2n+1) {
-    float: right;
 }
 
 hr { 
@@ -238,7 +265,7 @@ hr, hr:before {
     border-top: 5px solid #99e1d9;
     color: #fffae3;
     padding-top: 50px;
-    height: 500px;
+    padding-bottom: 50px;
 }
 
 #contact .col-md-4 {
@@ -247,4 +274,15 @@ hr, hr:before {
 
 #contact h1 {
     font-size: 18px;
+}
+
+#contact input[type="text"], input[type="text"]:focus {
+    outline: 0;
+    border: 1px solid #ccc;
+    box-shadow:none;
+}
+#contact textarea {
+    border: 1px solid #ccc;
+    resize: none;
+    outline: none;
 }
